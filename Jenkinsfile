@@ -5,10 +5,20 @@ pipeline {
             steps {
                 sh '''
                 echo "hola"
-                ls
-                pwd
                 '''
             }
+         stage('build') {
+            steps {
+                sh '''
+                echo "hola"
+                '''
+            }
+          stage('deploy') {
+            steps {
+                sh '''
+                echo "hola"
+                '''
+            }      
         }
     }
 }
