@@ -1,5 +1,5 @@
 pipeline {
-    agent {node {label "NodoJose"}}
+    agent {node {label "Jose"}}
     stages {
         stage('primeros pasos') {
             steps {
@@ -18,7 +18,7 @@ pipeline {
           stage('deploy') {
             steps {
                 sh '''
-                docker cp "/root/workspace/Jose_Pipeline/target/sparkjava-hello-world-1.0.war" laughing_pare:"/usr/local/tomcat/webapps"
+                docker cp "/root/workspace/FolderJose/Jose_Pipeline/target/sparkjava-hello-world-1.0.war" frosty_dijkstra:"/usr/local/tomcat/webapps"
                 '''
             
           }  
